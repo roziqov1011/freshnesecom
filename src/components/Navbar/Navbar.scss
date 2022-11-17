@@ -1,0 +1,143 @@
+@import '../../assets/sass/Colors.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: block;
+
+}
+
+.nav__top {
+    border-bottom: 1px solid #403e3e;
+    ;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav__contacts {
+        li {
+            margin-left: 33px;
+
+            a {
+                color: black;
+
+            }
+
+            &:first-child a {
+                color: $lightGreen;
+            }
+        }
+    }
+
+    .nav__links {
+        li {
+            margin-right: 38px;
+
+            a {
+                color: $lightGreen;
+            }
+        }
+    }
+}
+
+.nav__search {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        background: #F9F9F9;
+        border: 1px solid #D1D1D1;
+        border-radius: 12px;
+        padding: 11px;
+        width: 300px;
+        outline: none;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.nav__main {}
+
+.nav__category {
+    margin-top: 48px;
+    padding: 16px 0;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button {
+        border: none;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+.sign__cart{
+    position: relative;
+    button{
+        &:hover{
+            background-color: transparent;
+            color: black;
+        }
+    }
+}
+.sign{
+position: absolute;
+display: block;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5px;
+height: 17px;
+top: -10px;
+right: 10px;
+border-radius: 17px;
+font-size: 14px;
+background-color: crimson;
+color: white;
+}
+.my__none{
+    display: none;
+}
+
+.cart__item{
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.1);
+border-radius: 3px;
+padding: 10px;
+transition: all ease 0.4s;
+&:hover{
+    box-shadow: 0px 11.2514px 15px rgba(0, 0, 0, 0.2);
+}
+
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    div{
+        margin-left: 30px;
+        p{
+            margin: 0;
+            padding: 0;
+
+        }
+    }
+}

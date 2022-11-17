@@ -1,0 +1,49 @@
+@import '../../assets/sass/Colors.scss';
+.card {
+    backdrop-filter: blur(10px);
+    margin: 10px 0;
+    width: 269px;
+    height: 323px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 16px;
+.my_color{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #000;
+}
+    img {
+        border-radius: 12px;
+        width: 227px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #575757;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        button{
+            background: $lightGreen;
+            border: 1px solid #46760A;
+            border-radius: 5px;
+            color: white;
+        }
+        b{
+        margin: 0 10px;
+        }
+    }
+}
