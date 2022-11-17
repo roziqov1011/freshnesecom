@@ -12,12 +12,12 @@ const navArr3 = []
 const btnData2 = data2
 const btnData1 = data1
 btnData2.forEach((e,i)=>{
-  if(navArr2.includes(e.model) != true){
+  if(navArr2.includes(e.model) !== true){
     navArr2.push(e.model)
   }
 })
 btnData1.forEach((e,i)=>{
-  if(navArr1.includes(e.model) != true){
+  if(navArr1.includes(e.model) !== true){
     navArr1.push(e.model)
   }
 })
@@ -48,7 +48,7 @@ function Navbar() {
   },[order])
 
   const handlerRemove = (e)=>{
-    setOrder(order.filter((k)=> k.id != e.currentTarget.id));
+    setOrder(order.filter((k)=> k.id !== e.currentTarget.id));
   }
   return (
     <div className='container'>
